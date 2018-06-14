@@ -87,7 +87,7 @@ void compareData(Float_t data1[][3],Float_t data2[][3]){
 
 void DoThis(){
 
-    
+
    TFile *filein = new TFile("file:~/Downloads/scan.root","READ");
    TTree *tree = (TTree*) filein->Get("vdMScanData;1");
    Int_t nentries = tree->GetEntries();
